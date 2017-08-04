@@ -117,14 +117,14 @@
 	<property name="WanderSpeed" value="0.08"/>
 	<property name="ApproachSpeed" value="0.2"/>
 	<property name="NightWanderSpeed" value="0.08"/>
-	<property name="NightApproachSpeed" value="1.1"/>
+	<property name="NightApproachSpeed" value="0.2" />
 	<property name="PanicSpeed" value="0.55"/>
 
-	<property name="CanClimbLadders" value="true"/>
+	<property name="CanClimbLadders" value="false" />
 	<property name="IsEnemyEntity" value="true"/>
 
 	<!-- Stealth settings -->
-	<property name="SightRange" value="30"/> <!-- distance in m -->
+	<property name="SightRange" value="20"/> <!-- distance in m -->
 	<property name="SightScale" value="-2,150"/> <!-- how well lit you have to be for the zombie to see you at min,max range -->
 
 	<property name="SleeperWakeupSightDetectionMin" value="-40,5"/> <!-- Indiv.Random. sight capability - "I see you" light value at point blank -->
@@ -163,26 +163,26 @@
 	<property name="CorpseBlock" value="GoreBlock1Prefab"/>
 	<property name="CorpseBlockChance" value="1"/>
 	<property name="ExperienceGain" value="679"/>
-	<property name="DeadBodyHitPoints" value="350"/> <!-- For harvesting -->
+	<property name="DeadBodyHitPoints" value="200"/> <!-- For harvesting -->
 	<property name="RootMotion" value="true"/>
 	<property name="HasDeathAnim" value="true"/>
 	<property name="HeadDismemberBaseChance" value="0"/>
 	<property name="HeadDismemberBonusChance" value="0.08"/>
-	<property name="HeadDismemberThreshold" value="0.23"/> <!-- if the total damage exceeds that value, there is a chance for dismemberment -->
-	<property name="LowerLegDismemberThreshold" value="0.175"/>
+	<property name="HeadDismemberThreshold" value="0.25"/> <!-- if the total damage exceeds that value, there is a chance for dismemberment -->
+	<property name="LowerLegDismemberThreshold" value="0.5"/>
 	<property name="LowerLegDismemberBaseChance" value="0"/>
-	<property name="LowerLegDismemberBonusChance" value="0.9"/>
-	<property name="UpperLegDismemberThreshold" value="0.175"/>
+	<property name="LowerLegDismemberBonusChance" value="0.07"/>
+	<property name="UpperLegDismemberThreshold" value="0.5"/>
 	<property name="UpperLegDismemberBaseChance" value="0"/>
-	<property name="UpperLegDismemberBonusChance" value="0.9"/>
-	<property name="LowerArmDismemberThreshold" value="0.105"/>
+	<property name="UpperLegDismemberBonusChance" value="0.07"/>
+	<property name="LowerArmDismemberThreshold" value="0.5"/>
 	<property name="LowerArmDismemberBaseChance" value="0"/>
-	<property name="LowerArmDismemberBonusChance" value="0.9"/>
-	<property name="UpperArmDismemberThreshold" value="0.105"/>
+	<property name="LowerArmDismemberBonusChance" value="0.07"/>
+	<property name="UpperArmDismemberThreshold" value="0.5"/>
 	<property name="UpperArmDismemberBaseChance" value="0"/>
-	<property name="UpperArmDismemberBonusChance" value="0.9"/>
-	<property name="LegCrawlerThreshold" value="0"/> <!-- at like .175 nearly every zombie knocked down from a leg hit turns into a crawler -->
-	<property name="LegCrippleThreshold" value="0.01"/>
+	<property name="UpperArmDismemberBonusChance" value="0.07"/>
+	<property name="LegCrawlerThreshold" value="0"/>
+	<property name="LegCrippleThreshold" value="0.5"/>
 	<property name="KnockdownProneDamageThreshold" value="0.5"/>
 	<property name="KnockdownProneStunDuration" value="4,6"/>
 	<property name="KnockdownProneRefillRate" value="0.045,0.045"/>
@@ -209,8 +209,8 @@
 	<property name="SoundSense" value="Enemies/Feral_Zombie/zombieferalsense"/>
 	<property name="SoundFootstepModifier" value="Enemies/Feral_Zombie/zombieferalfootstep"/>
 	<property name="WalkType" value="2"/>
-	<property name="ApproachSpeed" value="1.35"/>
-	<property name="NightApproachSpeed" value="1.35"/>
+	<property name="ApproachSpeed" value="0.35"/>
+	<property name="NightApproachSpeed" value="0.35"/>
 	<property name="HandItem" value="handZombieCop"/>
 	<property name="MaxHealth" value="750"/>
 	<property name="ExperienceGain" value="3429"/>
@@ -318,8 +318,8 @@
 	<property name="HandItem" value="handZombieFeral"/>
 	<property name="MaxHealth" value="400"/>
 	<property name="ExperienceGain" value="1556"/>
-	<property name="ApproachSpeed" value="1.35"/>
-	<property name="NightApproachSpeed" value="1.35"/>
+	<property name="ApproachSpeed" value="0.35"/>
+	<property name="NightApproachSpeed" value="0.35"/>
 	<property name="LootListOnDeath" value="38"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
@@ -373,7 +373,7 @@
 	<property name="HandItem" value="handZombieStrong"/>
 	<property name="MaxHealth" value="300"/>
 	<property name="ExperienceGain" value="1039"/>
-	<property name="CanClimbLadders" value="true"/>
+	<property name="CanClimbLadders" value="false"/>
 	<property name="PhysicsBody" value="zombieFat"/>
 	<property name="RootMotion" value="true"/>
 	<property name="HasDeathAnim" value="true"/>
@@ -392,8 +392,8 @@
 	<property name="HandItem" value="handZombieStrongFeral"/>
 	<property name="MaxHealth" value="600"/>
 	<property name="ExperienceGain" value="2091"/>
-	<property name="ApproachSpeed" value="1.35"/>
-	<property name="NightApproachSpeed" value="1.35"/>
+	<property name="ApproachSpeed" value="0.35"/>
+	<property name="NightApproachSpeed" value="0.35"/>
 	<property name="LootListOnDeath" value="85"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
@@ -419,8 +419,8 @@
 	<property name="HandItem" value="handZombieFeral"/>
 	<property name="MaxHealth" value="300"/>
 	<property name="ExperienceGain" value="1039"/>
-	<property name="ApproachSpeed" value="1.35"/>
-	<property name="NightApproachSpeed" value="1.35"/>
+	<property name="ApproachSpeed" value="0.35"/>
+	<property name="NightApproachSpeed" value="0.35"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
@@ -443,7 +443,7 @@
 	<property name="ExperienceGain" value="1556"/>
 	<property name="Weight" value="70"/>
 	<property name="PushFactor" value="20"/>
-	<property name="CanClimbLadders" value="true"/>
+	<property name="CanClimbLadders" value="false"/>
 	<property name="PhysicsBody" value="zombieStandard"/>
 	<property name="RootMotion" value="true"/>
 	<property name="HasDeathAnim" value="true"/>
@@ -458,8 +458,8 @@
 	<property name="HandItem" value="handZombieStrongFeral"/>
 	<property name="MaxHealth" value="600"/>
 	<property name="ExperienceGain" value="2091"/>
-	<property name="ApproachSpeed" value="1.35"/>
-	<property name="NightApproachSpeed" value="1.35"/>
+	<property name="ApproachSpeed" value="0.35"/>
+	<property name="NightApproachSpeed" value="0.35"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
@@ -479,7 +479,7 @@
 	<property name="WalkType" value="3"/>
 	<property name="HandItem" value="handZombie"/>
 	<property name="MaxHealth" value="100"/>
-	<property name="CanClimbLadders" value="true"/>
+	<property name="CanClimbLadders" value="false"/>
 	<property name="PhysicsBody" value="zombieStandardFemale"/>
 	<property name="RootMotion" value="true"/>
 	<property name="HasDeathAnim" value="true"/>
@@ -494,8 +494,8 @@
 	<property name="HandItem" value="handZombieFeral"/>
 	<property name="MaxHealth" value="200"/>
 	<property name="ExperienceGain" value="1039"/>
-	<property name="ApproachSpeed" value="1.35"/>
-	<property name="NightApproachSpeed" value="1.35"/>
+	<property name="ApproachSpeed" value="0.35"/>
+	<property name="NightApproachSpeed" value="0.35"/>
 	<property name="ReplaceMaterial2" value="entities/zombies/materials/feral_eye"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
@@ -515,7 +515,7 @@
 	<property name="WalkType" value="3"/>
 	<property name="HandItem" value="handZombie"/>
 	<property name="MaxHealth" value="100"/>
-	<property name="CanClimbLadders" value="true"/>
+	<property name="CanClimbLadders" value="false"/>
 	<property name="PhysicsBody" value="zombieStandardFemale"/>
 	<property name="RootMotion" value="true"/>
 	<property name="HasDeathAnim" value="true"/>
@@ -529,8 +529,8 @@
 	<property name="HandItem" value="handZombieFeral"/>
 	<property name="MaxHealth" value="200"/>
 	<property name="ExperienceGain" value="1039"/>
-	<property name="ApproachSpeed" value="1.35"/>
-	<property name="NightApproachSpeed" value="1.35"/>
+	<property name="ApproachSpeed" value="0.35"/>
+	<property name="NightApproachSpeed" value="0.35"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
@@ -550,7 +550,7 @@
 	<property name="WalkType" value="3"/>
 	<property name="HandItem" value="handZombie"/>
 	<property name="MaxHealth" value="100"/>
-	<property name="CanClimbLadders" value="true"/>
+	<property name="CanClimbLadders" value="false"/>
 	<property name="PhysicsBody" value="zombieStandardFemale"/>
 	<property name="RootMotion" value="true"/>
 	<property name="HasDeathAnim" value="true"/>
@@ -565,8 +565,8 @@
 	<property name="HandItem" value="handZombieFeral"/>
 	<property name="MaxHealth" value="200"/>
 	<property name="ExperienceGain" value="1039"/>
-	<property name="ApproachSpeed" value="1.35"/>
-	<property name="NightApproachSpeed" value="1.35"/>
+	<property name="ApproachSpeed" value="0.35"/>
+	<property name="NightApproachSpeed" value="0.35"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
@@ -586,7 +586,7 @@
 	<property name="WalkType" value="5"/>
 	<property name="HandItem" value="handZombie"/>
 	<property name="MaxHealth" value="100"/>
-	<property name="CanClimbLadders" value="true"/>
+	<property name="CanClimbLadders" value="false"/>
 	<property name="PhysicsBody" value="zombieStandardFemale"/>
 	<property name="RootMotion" value="true"/>
 	<property name="HasDeathAnim" value="true"/>
@@ -601,8 +601,8 @@
 	<property name="HandItem" value="handZombieFeral"/>
 	<property name="MaxHealth" value="250"/>
 	<property name="ExperienceGain" value="1039"/>
-	<property name="ApproachSpeed" value="1.35"/>
-	<property name="NightApproachSpeed" value="1.35"/>
+	<property name="ApproachSpeed" value="0.35"/>
+	<property name="NightApproachSpeed" value="0.35"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
@@ -627,8 +627,8 @@
 	<property name="HandItem" value="handZombieFeral"/>
 	<property name="MaxHealth" value="250"/>
 	<property name="ExperienceGain" value="1039"/>
-	<property name="ApproachSpeed" value="1.35"/>
-	<property name="NightApproachSpeed" value="1.35"/>
+	<property name="ApproachSpeed" value="0.35"/>
+	<property name="NightApproachSpeed" value="0.35"/>
 	<property name="LootListOnDeath" value="38"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
@@ -653,8 +653,8 @@
 	<property name="HandItem" value="handZombieFeral"/>
 	<property name="MaxHealth" value="250"/>
 	<property name="ExperienceGain" value="1039"/>
-	<property name="ApproachSpeed" value="1.35"/>
-	<property name="NightApproachSpeed" value="1.35"/>
+	<property name="ApproachSpeed" value="0.35"/>
+	<property name="NightApproachSpeed" value="0.35"/>
 	<property name="LootListOnDeath" value="38"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
@@ -708,8 +708,8 @@
 	<property name="HandItem" value="handZombieFeral"/>
 	<property name="MaxHealth" value="250"/>
 	<property name="ExperienceGain" value="1039"/>
-	<property name="ApproachSpeed" value="1.35"/>
-	<property name="NightApproachSpeed" value="1.35"/>
+	<property name="ApproachSpeed" value="0.35"/>
+	<property name="NightApproachSpeed" value="0.35"/>
 	<property name="ReplaceMaterial2" value="entities/zombies/materials/feral_eye"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
@@ -744,8 +744,8 @@
 	<property name="HandItem" value="handZombieStrongFeral"/>
 	<property name="MaxHealth" value="700"/>
 	<property name="ExperienceGain" value="2916"/>
-	<property name="ApproachSpeed" value="1.35"/>
-	<property name="NightApproachSpeed" value="1.35"/>
+	<property name="ApproachSpeed" value="0.35"/>
+	<property name="NightApproachSpeed" value="0.35"/>
 	<property name="LootListOnDeath" value="66"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
@@ -793,9 +793,8 @@
 	<property name="HandItem" value="handZombie02Feral"/>
 	<property name="MaxHealth" value="300"/>
 	<property name="ExperienceGain" value="1556"/>
-	<property name="ApproachSpeed" value="1.35"/>
-	<property name="NightApproachSpeed" value="1.35"/>
-	<property name="ApproachSpeed" value="1.1"/>
+	<property name="ApproachSpeed" value="0.35"/>
+	<property name="NightApproachSpeed" value="0.35"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
@@ -874,7 +873,7 @@
 	<property name="ModelType" value="Standard"/>
 	<property name="WalkType" value="7"/>
 	<property name="HandItem" value="handZombie"/>
-	<property name="CanClimbLadders" value="true"/>
+	<property name="CanClimbLadders" value="false"/>
 	<property name="PhysicsBody" value="zombieStandardFemale"/>
 	<property name="RootMotion" value="true"/>
 	<property name="HasDeathAnim" value="true"/>
@@ -888,8 +887,8 @@
 	<property name="HandItem" value="handZombieFeral"/>
 	<property name="MaxHealth" value="250"/>
 	<property name="ExperienceGain" value="1039"/>
-	<property name="ApproachSpeed" value="1.35"/>
-	<property name="NightApproachSpeed" value="1.35"/>
+	<property name="ApproachSpeed" value="0.35"/>
+	<property name="NightApproachSpeed" value="0.35"/>
 	<property name="LootListOnDeath" value="38"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
@@ -910,7 +909,7 @@
 	<property name="ModelType" value="Standard"/>
 	<property name="WalkType" value="1"/>
 	<property name="HandItem" value="handZombieCop"/>
-	<property name="CanClimbLadders" value="true"/>
+	<property name="CanClimbLadders" value="false"/>
 	<property name="PhysicsBody" value="zombieFat"/>
 	<property name="RootMotion" value="true"/>
 	<property name="HasDeathAnim" value="true"/>
@@ -927,8 +926,8 @@
 	<property name="HandItem" value="handZombieCopFeral"/>
 	<property name="MaxHealth" value="1050"/>
 	<property name="ExperienceGain" value="4334"/>
-	<property name="ApproachSpeed" value="1.35"/>
-	<property name="NightApproachSpeed" value="1.35"/>
+	<property name="ApproachSpeed" value="0.35"/>
+	<property name="NightApproachSpeed" value="0.35"/>
 	<property name="LootListOnDeath" value="38"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
@@ -944,7 +943,7 @@
 	<property name="RightHandJointName" value="Jaw"/>
 	<property name="AvatarController" value="AvatarZombie01Controller"/>
 	<property name="ModelType" value="Standard"/>
-	<property name="CanClimbLadders" value="true"/>
+	<property name="CanClimbLadders" value="false"/>
 	<property name="PhysicsBody" value="zombieFat"/>
 	<property name="RootMotion" value="true"/>
 	<property name="HasDeathAnim" value="true"/>
@@ -997,8 +996,8 @@
 	<property name="HandItem" value="handZombieCopFeral"/>
 	<property name="MaxHealth" value="1050"/>
 	<property name="ExperienceGain" value="4334"/>
-	<property name="ApproachSpeed" value="1.35"/>
-	<property name="NightApproachSpeed" value="1.35"/>
+	<property name="ApproachSpeed" value="0.35"/>
+	<property name="NightApproachSpeed" value="0.35"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye"/>
 	<property name="Explosion.BlockDamage" value="650"/>
 	<property name="Explosion.EntityDamage" value="200"/>
@@ -1060,8 +1059,8 @@
 	<property name="MaxHealth" value="400"/>
 	<property name="ExperienceGain" value="2091"/>
 	<property name="HandItem" value="handZombieWorkerFeral"/>
-	<property name="ApproachSpeed" value="1.35"/>
-	<property name="NightApproachSpeed" value="1.35"/>
+	<property name="ApproachSpeed" value="0.35"/>
+	<property name="NightApproachSpeed" value="0.35"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
@@ -1095,8 +1094,8 @@
 	<property name="MaxHealth" value="750"/>
 	<property name="ExperienceGain" value="3429"/>
 	<property name="HandItem" value="handZombieCopFeral"/>
-	<property name="ApproachSpeed" value="1.35"/>
-	<property name="NightApproachSpeed" value="1.35"/>
+	<property name="ApproachSpeed" value="0.35"/>
+	<property name="NightApproachSpeed" value="0.35"/>
 	<property name="ReplaceMaterial0" value="entities/zombies/materials/feral_eye"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
@@ -1123,8 +1122,8 @@
 	<property name="HandItem" value="handZombieFeral"/>
 	<property name="MaxHealth" value="300"/>
 	<property name="ExperienceGain" value="1039"/>
-	<property name="ApproachSpeed" value="1.35"/>
-	<property name="NightApproachSpeed" value="1.35"/>
+	<property name="ApproachSpeed" value="0.35"/>
+	<property name="NightApproachSpeed" value="0.35"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
@@ -1144,7 +1143,7 @@
 	<property name="WalkType" value="3"/>
 	<property name="HandItem" value="handZombie"/>
 	<property name="MaxHealth" value="120"/>
-	<property name="CanClimbLadders" value="true"/>
+	<property name="CanClimbLadders" value="false"/>
 	<property name="PhysicsBody" value="zombieStandardFemale"/>
 	<property name="RootMotion" value="true"/>
 	<property name="HasDeathAnim" value="true"/>
@@ -1156,8 +1155,8 @@
 <!-- Missing: zombieCheerleaderRadiated -->
 
 <entity_class name="zombieCheerleaderFeral" extends="zombieCheerleader">
-	<property name="ApproachSpeed" value="1.35"/>
-	<property name="NightApproachSpeed" value="1.35"/>
+	<property name="ApproachSpeed" value="0.35"/>
+	<property name="NightApproachSpeed" value="0.35"/>
 	<property name="HandItem" value="handZombieFeral"/>
 	<property name="MaxHealth" value="200"/>
 	<property name="ExperienceGain" value="1039"/>
@@ -1180,8 +1179,8 @@
 	<property name="HandItem" value="handZombieFeral"/>
 	<property name="MaxHealth" value="300"/>
 	<property name="ExperienceGain" value="1556"/>
-	<property name="ApproachSpeed" value="1.35"/>
-	<property name="NightApproachSpeed" value="1.35"/>
+	<property name="ApproachSpeed" value="0.35"/>
+	<property name="NightApproachSpeed" value="0.35"/>
 	<property name="LootListOnDeath" value="38"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye"/>
 	<property name="LootListOnDeath" value="81"/>
@@ -1223,8 +1222,8 @@
 	<property name="Mesh" value="Zombies/zombieStandardFarmerRagdoll"/>
 	<property name="HandItem" value="handZombieStrongFeral"/>
 	<property name="MaxHealth" value="450"/>
-	<property name="ApproachSpeed" value="1.35"/>
-	<property name="NightApproachSpeed" value="1.35"/>
+	<property name="ApproachSpeed" value="0.35"/>
+	<property name="NightApproachSpeed" value="0.35"/>
 	<property name="ExperienceGain" value="1556"/>
 	<property name="LootListOnDeath" value="85"/>
 	<property name="WalkType" value="6"/>
@@ -1252,8 +1251,8 @@
 	<property name="MaxHealth" value="350"/>
 	<property name="ExperienceGain" value="1556"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye"/>
-	<property name="ApproachSpeed" value="1.35"/>
-	<property name="NightApproachSpeed" value="1.35"/>
+	<property name="ApproachSpeed" value="0.35"/>
+	<property name="NightApproachSpeed" value="0.35"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
 
@@ -2031,7 +2030,7 @@
 	<property name="NightWanderSpeed" value="0.75"/>
 	<property name="NightApproachSpeed" value="1.15"/>
 	<property name="PanicSpeed" value="1.15"/>
-	<property name="CanClimbLadders" value="true"/>
+	<property name="CanClimbLadders" value="false"/>
 	<property name="IsEnemyEntity" value="true"/>
 	<property name="SurfaceCategory" value="organic"/>
 	<property name="WalkType" value="7"/>
@@ -2088,7 +2087,7 @@
 	<property name="NightWanderSpeed" value="0.5"/>
 	<property name="NightApproachSpeed" value="1"/>
 	<property name="PanicSpeed" value="1.15"/>
-	<property name="CanClimbLadders" value="true"/>
+	<property name="CanClimbLadders" value="false"/>
 	<property name="IsEnemyEntity" value="true"/>
 	<property name="SurfaceCategory" value="organic"/>
 	<property name="WalkType" value="7"/>
@@ -2156,7 +2155,7 @@
 	<property name="NightWanderSpeed" value="0.75"/>
 	<property name="NightApproachSpeed" value="1.15"/>
 	<property name="PanicSpeed" value="1.35"/>
-	<property name="CanClimbLadders" value="true"/>
+	<property name="CanClimbLadders" value="false"/>
 	<property name="IsEnemyEntity" value="true"/>
 	<property name="LootListAlive" value="62"/>
 	<property name="SurfaceCategory" value="organic"/>
